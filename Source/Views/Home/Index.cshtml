@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Home page";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 15px;
+            top: 900px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 90px;
+        }
+
+            .header h1 {
+                font-size: 3rem;
+                font-weight: bold;
+                color: #333;
+                margin-bottom: 10px;
+                top: 325px;
+                position: absolute;
+                right: 450px;
+            }
+
+            .header p {
+                font-size: 1.2rem;
+                color: #777;
+                max-width: 800px;
+                margin: 0 auto;
+            }
+
+        .image-placeholder {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 400px;
+            background-color: #f5f5f5;
+            border: 2px dashed #ccc;
+            font-size: 1.5rem;
+            color: #aaa;
+            margin-bottom: 60px;
+            position:absolute;
+            right:450px;
+
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            font-size: 1.2rem;
+            font-weight: bold;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn-dashboard {
+            background-color: #007bff;
+            color: white;
+            position: absolute;
+            right: 500px;
+            top: 1000px;
+        }
+
+        .btn-weather {
+            background-color: #28a745;
+            color: white;
+            position: absolute;
+            left: 500px;
+            top: 1000px;
+        }
+
+        .btn:hover {
+            text-decoration: none;
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Welcome to The Weather Forecast Page</h1>
+            <p>This website is the one stop shop for your up-to-date weather information and the #1 reliable source for all environmental advice. </p>
+        </div>
+        
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <center>
+                        <img src="~/Images/dribbble.gif" alt="funny GIF" width="100%">
+                    </center>
+                </div>
+                <div class="flip-card-back">
+                    
+                    <h1><b><font size"5>Hi there!</font></b></h1>
+                    <p><font size="4">Struggling to cope in these weather conditions?</font></p>
+                    <p>Visit our <a asp-action="Advice" style="color: greenyellow">Advice page</a>.</p>
+                    
+                    <img src="~/Images/hello-hi.gif" alt="funny GIF" width="50%">
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+
+
+        <div class="wd">
+
+            <br />
+            <br />
+
+            <a class="btn btn-dashboard" asp-area="" asp-controller="Home" asp-action="Dashboard">Dashboard</a>
+            <a class="btn btn-weather" asp-area="" asp-controller="Home" asp-action="Weather">Weather Forecast</a>
+        </div>
+    </div>
+</body>
+</html>
