@@ -434,9 +434,10 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     height: 200px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
-    position: absolute;
-    top: 500px;
-    right: 620px;
+    position: relative;
+    margin:  20px;
+    bottom:70px;
+    left:20%;
 }
 
 /* This container is needed to position the front and back side */
