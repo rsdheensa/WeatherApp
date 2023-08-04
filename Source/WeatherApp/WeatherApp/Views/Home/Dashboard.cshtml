@@ -1,0 +1,137 @@
+﻿@{
+    ViewData["Title"] = "Dashboard";
+}
+
+
+
+
+<style>
+    body {
+        background-color:black;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    #icon {
+        
+        margin-top: 20px;
+        font-size: 50px;
+        color: #0026ff;
+    }
+    #icon:hover{
+        color:red;
+        font-size:60px;
+    }
+    .card{
+        margin-bottom: 40px;
+    }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js" integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div class=" row">
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Return</h2>
+                <div style="text-align:center">
+                    <a class="align-center" onclick="history.back()">
+                        <i id="icon" class="fa fa-undo-alt"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Air Quality</h2>
+                <div style="text-align:center">
+                    <a class="align-center" href="AirQuality">
+                        <i id="icon" class="fa fa-sun"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Weather</h2>
+                <div style="text-align:center">
+                    <a class="align-center" href="Weather">
+                        <i id="icon" class="fa fa-cloud"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Weather Location</h2>
+                <div style="text-align:center">
+                    <a class="align-center" asp-controller="WeatherForecast" asp-action="SearchByCity">
+                        <i id="icon" class="fa fa-map-marker"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Advice</h2>
+                <div style="text-align:center">
+                    <a class="align-center" href="Advice">
+                        <i id="icon" class="fa fa-user"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Privacy</h2>
+                <div style="text-align:center">
+                    <a class="align-center" href="Privacy">
+                        <i id="icon" class="fa fa-lock"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Home</h2>
+                <div style="text-align:center">
+                    <a class="align-center" href="Index">
+                        <i id="icon" class="fa fa-home"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class=" col-lg-3">
+        <div class=" card" style=" height:200px">
+            <div class=" card-body">
+                <h2 style="text-align:center">Contact us</h2>
+                <div style="text-align:center">
+                    <a class="align-center" href="Contact">
+                        <i id="icon" class="fa fa-phone"></i>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+

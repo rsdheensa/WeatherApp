@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\WeatherApp",
+    "\\WeatherApp\\WeatherApp",
+    "\\WeatherApp\\WeatherApp\\Views",
+    "\\WeatherApp\\WeatherApp\\Views\\Home",
+    "\\WeatherApp\\WeatherApp\\Views\\Shared"
+  ],
+  "SelectedNode": "\\WeatherApp\\WeatherApp\\Views\\Home\\Thanks.cshtml",
+  "PreviewInSolutionExplorer": false
+}
