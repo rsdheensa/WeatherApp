@@ -1,10 +1,23 @@
 # WeatherApp
-This is a read me file explaing what my Weather app does.
-This Weather app is built in visual studio 2022, allowing users to login/register, and being able to check the current weather for any city.
+This Weather app is built using the .NET framework.
+The app allows users to check the weather real time for any city, and also allows them to create their account.
 
-Instrctions:
-Step 1- load visual studio and click on clone a repository on the right
-Step 2- then enter https://github.com/rsdheensa/WeatherApp.git into repository location
-Step 3- click on clone and wait for the project to load.
-Step 4 - On the right, click on WeatherApp-main, then source, then weather app then double click on weather.sln
-Step 5 - Once everything is loaded, click the second green play button at the top(it should say start without debugging)
+Instructions:
+1. Open visual studio
+2. Choose the option "clone a repository"
+3. Type in the URL https://github.com/rsdheensa/WeatherApp.git into repository location
+4. Click on clone and wait for the project to load.
+5. Under the solution Explorer tab, click on WeatherApp, Source, and then double click WeatherApp.sln. 
+6. This will load the project, might take a minute or two
+7. On the toolbar, press the green play button next to https.
+8. This will build the code and launch the website.
+
+If you get any SSL errors, then change the git settings as follows:
+
+1. Close Visual studio
+2. Open CMD as admin
+2. Fix 1: type "git config --global http.sslBackend schannel"
+3. Open visual studio, and retry cloning the repo.
+4. If this still fails, then repeat steps 1 & 2.
+5. Fix 2: type "git config --system http.sslBackend schannel"
+6. Open visual studio, and retry cloning the repo.
