@@ -9,9 +9,7 @@ Instructions:
 4. Click on clone and wait for the project to load.
 5. Under the solution Explorer tab at the bottom, right click on the WeatherApp under the main WeatherApp Tab and select "Open in intergrated terminal"
 6. Type dotnet run and then press CTRL and left click on the "http:\\localfile:xxxx" 
-7. This will load the project, might take a minute or two
-8. On the toolbar, press the green play button next to https.
-9. This will build the code and launch the website.
+   
 
 If you get any SSL errors, then change the git settings as follows:
 
